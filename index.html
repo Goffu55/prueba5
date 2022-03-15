@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial.scale=1.0"> -->
+    <title>Prueba 5</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: center;
+            font-family: arial;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: arial;">Prueba 5</h1>
+    <section class="content">
+        <article>
+            <h2 class="title">Agregar datos</h2>
+            <form id="form">
+                <input type="text" id="palabra" name="palabra" placeholder="Palabra" required style="width: 100%; margin: 10px;">
+                <br>
+                <input type="text" id="numero" name="numero" min="5" placeholder="Numero" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required style="width: 100%;  margin: 10px;">
+                <br>
+                <button id="invertir"  value="Enviar" style="padding: 5px 10px;">Enviar</button>
+                <br>
+                
+            </form>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" readonly onkeydown="noPuntoComa( event )" style="width: 100%;  margin: 10px;"></textarea>
+        </article>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
